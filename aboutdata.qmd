@@ -1,0 +1,70 @@
+---
+title: "About Data"
+---
+
+## Data Preprocessing 
+
+The purpose of the data preprocessing in this paper is to merge all the csv files into a single dataset, in order to streamline the data manipulation and increase the efficiency of the data analysis. 
+
+#### Injury Data Transformation 
+
+The following changes were made:
+
+- `player_name` column is renamed to `player_id`
+
+- `timestamp` column is renamed to `date` and converted into a date object
+
+New columns were added:
+
+- `injury_status`: player had an injury on the date = 1, otherwise = 0
+
+- `num_injury`: number of injuries player had on the date
+
+- `severity_max`: the maximum injury severity per day per player classified by major, minor, and none. (e.g. if the player had two injuries on the same day that are both major and minor, the value would be major)
+
+- Injury location indicators: had injury on the location = 1, otherwise = 0
+
+  - `groin_hip_injury`
+  
+  - `head_neck_injury`
+  
+  - `left_foot_injury`
+  
+  - `left_knee_injury`
+  
+  - `left_leg_injury`
+  
+  - `left_thigh_injury`
+  
+  - `right_foot_injury`
+  
+  - `right_knee_injury`
+  
+  - `right_leg_injury`
+  
+  - `right_thigh_injury`
+  
+  - `stomach_back_injury`
+  
+#### Data Transformation (Others)
+
+The following changes were made:
+
+- The fatigue, mood, readiness, stress, sleep duration, sleep quality, soreness, daily load, weekly load, atl, ctl28, ctl42, acwr, monotony, strain datasets were transformed from wide format into long format, using the `tidyr` package. This allowed the dataset to be merged consistently across players and time. 
+
+- All the column names for the date are renamed to `date` and converted to a date object.
+
+### Data Merge
+
+All datasets (injury, wellness, and training load) were merged using: 
+
+- `player_id`
+
+- `date` 
+
+A new variable was also created:
+
+- `team`: indicates whether a player belongs to Team A or Team B 
+
+Finally, `player_id` was coded as `player_number` for the simplification of the data analysis. 
+

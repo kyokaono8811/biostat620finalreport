@@ -1,0 +1,23 @@
+project:
+  type: website
+  # output-dir: docs
+
+website:
+  title: "Injury Analysis"
+  navbar:
+    left:
+    - href: index.qmd
+      text: Main Page
+    - href: aboutdata.qmd
+      text: About Data
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+editor: visual
+
