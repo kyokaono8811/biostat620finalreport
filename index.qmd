@@ -134,7 +134,7 @@ library(purrr)
 
 ```{r, include = FALSE}
 # Injury Data 
-injury <- read.csv("/Users/kyokaono/Desktop/subjective/injury/injury.csv")
+injury <- read.csv("/Users/kyokaono/Desktop/injuryanalysis/subjective/injury/injury.csv")
 dim(injury)
 ```
 
@@ -157,7 +157,7 @@ kable(tail(as_tibble(injury)))
 ```
 
 ```{r, include = FALSE}
-fatigue <- read.csv("/Users/kyokaono/Desktop/subjective/wellness/fatigue.csv")
+fatigue <- read.csv("/Users/kyokaono/Desktop/injuryanalysis/subjective/wellness/fatigue.csv")
 ```
 
 <br><br>
@@ -179,7 +179,7 @@ kable(tail(as_tibble(fatigue)))
 ```
 
 ```{r, include = FALSE}
-mood <- read.csv("/Users/kyokaono/Desktop/subjective/wellness/mood.csv")
+mood <- read.csv("/Users/kyokaono/Desktop/injuryanalysis/subjective/wellness/mood.csv")
 ```
 
 <br><br>
@@ -201,7 +201,7 @@ kable(tail(as_tibble(mood)))
 ```
 
 ```{r, include = FALSE}
-readiness <- read.csv("/Users/kyokaono/Desktop/subjective/wellness/readiness.csv")
+readiness <- read.csv("/Users/kyokaono/Desktop/injuryanalysis/subjective/wellness/readiness.csv")
 ```
 
 <br><br>
@@ -223,7 +223,7 @@ kable(tail(as_tibble(readiness)))
 ```
 
 ```{r, include = FALSE}
-stress <- read.csv("/Users/kyokaono/Desktop/subjective/wellness/stress.csv")
+stress <- read.csv("/Users/kyokaono/Desktop/injuryanalysis/subjective/wellness/stress.csv")
 ```
 
 <br><br>
@@ -245,7 +245,7 @@ kable(tail(as_tibble(stress)))
 ```
 
 ```{r, include = FALSE}
-sleep_duration <- read.csv("/Users/kyokaono/Desktop/subjective/wellness/sleep_duration.csv")
+sleep_duration <- read.csv("/Users/kyokaono/Desktop/injuryanalysis/subjective/wellness/sleep_duration.csv")
 ```
 
 <br><br>
@@ -267,7 +267,7 @@ kable(tail(as_tibble(sleep_duration)))
 ```
 
 ```{r, include = FALSE}
-sleep_quality <- read.csv("/Users/kyokaono/Desktop/subjective/wellness/sleep_quality.csv")
+sleep_quality <- read.csv("/Users/kyokaono/Desktop/injuryanalysis/subjective/wellness/sleep_quality.csv")
 ```
 
 <br><br>
@@ -289,7 +289,7 @@ kable(tail(as_tibble(sleep_quality)))
 ```
 
 ```{r, include = FALSE}
-soreness <- read.csv("/Users/kyokaono/Desktop/subjective/wellness/soreness.csv")
+soreness <- read.csv("/Users/kyokaono/Desktop/injuryanalysis/subjective/wellness/soreness.csv")
 ```
 
 <br><br>
@@ -311,7 +311,7 @@ kable(tail(as_tibble(soreness)))
 ```
 
 ```{r, include = FALSE}
-daily_load <- read.csv("/Users/kyokaono/Desktop/subjective/training-load/daily_load.csv")
+daily_load <- read.csv("/Users/kyokaono/Desktop/injuryanalysis/subjective/training-load/daily_load.csv")
 ```
 
 <br><br>
@@ -333,7 +333,7 @@ kable(tail(as_tibble(daily_load)))
 ```
 
 ```{r, include = FALSE}
-weekly_load <- read.csv("/Users/kyokaono/Desktop/subjective/training-load/weekly_load.csv")
+weekly_load <- read.csv("/Users/kyokaono/Desktop/injuryanalysis/subjective/training-load/weekly_load.csv")
 ```
 
 <br><br>
@@ -355,7 +355,7 @@ kable(tail(as_tibble(weekly_load)))
 ```
 
 ```{r, include = FALSE}
-atl <- read.csv("/Users/kyokaono/Desktop/subjective/training-load/atl.csv")
+atl <- read.csv("/Users/kyokaono/Desktop/injuryanalysis/subjective/training-load/atl.csv")
 ```
 
 <br><br>
@@ -377,8 +377,8 @@ kable(tail(as_tibble(atl)))
 ```
 
 ```{r, include = FALSE}
-ctl28 <- read.csv("/Users/kyokaono/Desktop/subjective/training-load/ctl28.csv")
-ctl42 <- read.csv("/Users/kyokaono/Desktop/subjective/training-load/ctl42.csv")
+ctl28 <- read.csv("/Users/kyokaono/Desktop/injuryanalysis/subjective/training-load/ctl28.csv")
+ctl42 <- read.csv("/Users/kyokaono/Desktop/injuryanalysis/subjective/training-load/ctl42.csv")
 ```
 
 <br><br>
@@ -418,7 +418,7 @@ kable(tail(as_tibble(ctl42)))
 ```
 
 ```{r, include = FALSE}
-acwr <- read.csv("/Users/kyokaono/Desktop/subjective/training-load/acwr.csv")
+acwr <- read.csv("/Users/kyokaono/Desktop/injuryanalysis/subjective/training-load/acwr.csv")
 ```
 
 <br><br>
@@ -440,7 +440,7 @@ kable(tail(as_tibble(acwr)))
 ```
 
 ```{r, include = FALSE}
-monotony <- read.csv("/Users/kyokaono/Desktop/subjective/training-load/monotony.csv")
+monotony <- read.csv("/Users/kyokaono/Desktop/injuryanalysis/subjective/training-load/monotony.csv")
 ```
 
 <br><br>
@@ -462,7 +462,7 @@ kable(tail(as_tibble(monotony)))
 ```
 
 ```{r, include = FALSE}
-strain <- read.csv("/Users/kyokaono/Desktop/subjective/training-load/strain.csv")
+strain <- read.csv("/Users/kyokaono/Desktop/injuryanalysis/subjective/training-load/strain.csv")
 ```
 
 <br><br>
